@@ -1,0 +1,19 @@
+.best__card{
+  background-color: $color-secondary;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover .best__list-title {
+    color: $color-primary;
+
+    transition: $transition-color;
+  }
+
+  @include media-mobile {
+    &:hover .best__list-title {
+      color: $color-additional;
+    }
+
+    cursor: inherit;
+  }
+}

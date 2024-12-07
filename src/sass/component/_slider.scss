@@ -1,0 +1,31 @@
+.slider__wrapper {
+  @extend %wrapper-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 0;
+}
+
+.slider__content {
+  width: 426px;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 81px;
+
+  @include media-tablet {
+    padding-right: 0;
+  }
+
+  @include media-mobile {
+    width: 324px;
+  }
+}
+
+.slider__description {
+  @extend %font-add;
+  color: $color-secondary;
+  margin-bottom: 12px;
+}
+
+.slider__title {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+  padding: 0 82px;
+
+  @include media-tablet {
+    max-width: $tablet-width;
+    padding: 0 8px;
+  }
+}

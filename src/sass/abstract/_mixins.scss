@@ -1,0 +1,56 @@
+@mixin font(
+  $weight: 600,
+  $size: 2.4rem,
+  $height: 1.3,
+  $letter-spacing: 0.05em,
+  $color: $color-additional
+) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+}
+
+@mixin media-laptop {
+  @media (max-width: $content-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-width-gifts-card {
+  @media (max-width: $tablet-width-gifts-card) {
+    @content;
+  }
+}
+
+@mixin media-mobile-width-gifts-card {
+  @media (max-width: $mobile-width-gifts-card) {
+    @content;
+  }
+}
+
+
+@mixin media-small-mobile-width {
+  @media (max-width: $small-mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-width-for-burger {
+  @media (max-width: $tablet-width-burger) {
+    @content;
+  }
+}

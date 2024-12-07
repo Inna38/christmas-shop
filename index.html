@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./src/sass/style.css" />
+    <title>Christmas Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="logo logo__home">
+          <img src="./img/logo.png" alt="logo" class="logo_img" />
+          <span class="logo_text">the gifts</span>
+        </div>
+
+        <nav class="header__navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="./giftsPage.html">gifts</a>
+            </li>
+            <li class="navigation-item"><a href="#about">about</a></li>
+            <li class="navigation-item"><a href="#best">best</a></li>
+            <li class="navigation-item"><a href="#contacts">contacts</a></li>
+          </ul>
+        </nav>
+
+        <svg width="34" height="40" class="burger__icon burger__open">
+          <use href="./img/icon/InlineSprite.svg#burger"></use>
+        </svg>
+
+        <div class="burger__container">
+          <div>
+            <div>
+              <div class="logo logo__home">
+                <img src="./img/logo.png" alt="logo" class="logo_img" />
+                <span class="logo_text">the gifts</span>
+              </div>
+
+              <button class="burger__close">
+                <svg width="26" height="26" class="burger__icon-close">
+                  <use href="./img/icon/InlineSprite.svg#burger_close"></use>
+                </svg>
+              </button>
+            </div>
+            <nav class="mobile__header__navigation">
+              <ul class="mobile-navigation-list">
+                <li class="mobile-navigation-item">
+                  <a href="./giftsPage.html">gifts</a>
+                </li>
+                <li class="mobile-navigation-item">
+                  <a href="#about">about</a>
+                </li>
+                <li class="mobile-navigation-item"><a href="#best">best</a></li>
+                <li class="mobile-navigation-item">
+                  <a href="#contacts">contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrapper hero__wrapper">
+          <div class="hero__container">
+            <p class="hero__description">Merry Christmas</p>
+            <h1 class="hero__title">
+              Gift yourself the magic of new possibilities
+            </h1>
+            <a href="./giftsPage.html" class="button hero__button"
+              >Explore Magical Gifts</a
+            >
+
+            <p class="hero__description">and Happy New Year</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper about__wrapper" id="about">
+        <div class="about__container">
+          <div class="about__content">
+            <div class="about__content-info">
+              <p class="about__over-title">About</p>
+              <h3 class="about__title">Unleash your inner superhero!</h3>
+              <p class="about__description">
+                This New Year marks the beginning of your journey to inner
+                harmony and new strengths. We offer unique gifts that will help
+                you improve your life.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__container-img">
+            <img src="./img/santa.png" alt="santa" class="about__img" />
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper slider__wrapper">
+        <div class="slider__content">
+          <p class="slider__description">Become Happier!</p>
+          <h3 class="slider__title">in the new 2025</h3>
+        </div>
+
+        <div class="swiper carousel-container">
+          <ul class="swiper-wrapper carousel-item">
+            <li class="swiper-slide carousel-slides">
+              <h2 class="carousel-title">Live</h2>
+              <img src="./img/snowman.png" alt="snowman" class="carousel-img" />
+            </li>
+            <li class="swiper-slide carousel-slides">
+              <h2 class="carousel-title">create</h2>
+              <img
+                src="./img/christmas-trees.png"
+                alt="christmas-trees"
+                class="carousel-img"
+              />
+            </li>
+            <li class="swiper-slide carousel-slides">
+              <h2 class="carousel-title">Love</h2>
+              <img
+                src="./img/ball/christmas-tree-ball.png"
+                alt="snowman"
+                class="carousel-img"
+              />
+            </li>
+            <li class="swiper-slide carousel-slides">
+              <h2 class="carousel-title">dream</h2>
+              <img
+                src="./img/fairytale-house.png"
+                alt="snowman"
+                class="carousel-img"
+              />
+            </li>
+          </ul>
+          <div class="carousel-btn">
+            <button class="swiper-button-prev carousel-btn_left">
+              <svg width="56" height="56" class="carousel-icon">
+                <use href="./img/icon/InlineSprite.svg#arrowLeft"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next carousel-btn_right">
+              <svg
+                width="56"
+                height="56"
+                class="carousel-arrow_right carousel-icon"
+              >
+                <use href="./img/icon/InlineSprite.svg#arrowRight"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper best__wrapper" id="best">
+        <div class="best__content">
+          <p class="best__description">Best Gifts</p>
+          <h3 class="best__title">especially for you</h3>
+        </div>
+
+        <ul class="best_list js-modal">
+          <li class="best__card best__list-item" id="1">
+            <img
+              src="./img/ball/gift-for-work.png"
+              alt="cristmass-ball"
+              class="best_item-img"
+            />
+
+            <div class="best__list-content">
+              <p class="best__list-description tag tag_work">For work</p>
+              <h4 class="best__list-title">Console.log Guru</h4>
+            </div>
+          </li>
+
+          <li class="best__card best__list-item" id="9">
+            <img
+              src="./img/ball/gift-for-health.png"
+              alt="cristmass-ball"
+              class="best_item-img"
+            />
+
+            <div class="best__list-content">
+              <p class="best__list-description tag tag_health">For health</p>
+              <h4 class="best__list-title">Hydration Bot</h4>
+            </div>
+          </li>
+
+          <li class="best__card best__list-item" id="10">
+            <img
+              src="./img/ball/gift-for-work.png"
+              alt="cristmass-ball"
+              class="best_item-img"
+            />
+
+            <div class="best__list-content">
+              <p class="best__list-description tag tag_work">For work</p>
+              <h4 class="best__list-title">Merge Master</h4>
+            </div>
+          </li>
+
+          <li class="best__card best__list-item" id="12">
+            <img
+              src="./img/ball/gift-for-harmony.png"
+              alt="cristmass-ball"
+              class="best_item-img"
+            />
+
+            <div class="best__list-content">
+              <p class="best__list-description tag tag_harmony">For harmony</p>
+              <h4 class="best__list-title">
+                Spontaneous Coding <br />
+                Philosopher
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cta__wrapper">
+        <div class="wrapper bg__wrapper">
+          <div class="cta__container">
+            <h3 class="cta__title">
+              Ready to start your journey to a better version of yourself?
+            </h3>
+            <a href="./giftsPage.html" class="button">Explore Magical Gifts</a>
+
+            <p class="cta__description">The New Year is Coming Soon...</p>
+
+            <div class="timer">
+              <h3 class="timer__item day"></h3>
+              <h3 class="timer__item hrs"></h3>
+              <h3 class="timer__item min"></h3>
+              <h3 class="timer__item sec"></h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrapper foote__wrapper home-foote__wrapper" id="contacts">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="tel:+375291112233" class="footer__link">
+            <svg width="80" height="80">
+              <use href="./img/icon/InlineSprite.svg#santa_icon"></use>
+            </svg>
+            <p class="footer__item-link">+375 (29) 111-22-33</p>
+            <span class="footer__item-text">Call Us</span>
+          </a>
+        </li>
+
+        <li class="footer__item">
+          <a
+            href="https://www.google.com/maps/@59.8020774,-73.412481,4.08z?hl=ru&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+            target="blank"
+            class="footer__link"
+          >
+            <svg width="80" height="80">
+              <use href="./img/icon/InlineSprite.svg#christmas-tree_icon"></use>
+            </svg>
+            <p class="footer__item-link">Magic forest</p>
+            <span class="footer__item-text">meet us</span></a
+          >
+        </li>
+
+        <li class="footer__item">
+          <a href="mailto:gifts@magic.com" class="footer__link">
+            <svg width="80" height="80">
+              <use href="./img/icon/InlineSprite.svg#snake_icon"></use>
+            </svg>
+            <p class="footer__item-link">gifts@magic.com</p>
+            <span class="footer__item-text">write us</span></a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-list social-container">
+        <li class="social-item">
+          <a href="https://t.me/s/rss_announcements" target="blank">
+            <svg width="24" height="24" class="social-link icon">
+              <use href="./img/icon/InlineSprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.facebook.com/groups/TheRollingScopes/?locale=ru_RU"
+            target="blank"
+          >
+            <svg width="24" height="24" class="social-link icon">
+              <use href="./img/icon/InlineSprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.instagram.com/rsschool_news/" target="blank">
+            <svg width="24" height="24" class="social-link icon">
+              <use href="./img/icon/InlineSprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://x.com/i/flow/login?redirect_after_login=%2Frollingscopes"
+            target="blank"
+          >
+            <svg width="24" height="24" class="social-link icon">
+              <use href="./img/icon/InlineSprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="social-link-container">
+        <li class="social-item-container">
+          <p class="social-link-copyright">
+            © Copyright 2025, All Rights Reserved
+          </p>
+        </li>
+        <li class="social-item-container">
+          <a href="https://rs.school/" target="blank" class="social-link-text"
+            >Made in Rolling Scopes School</a
+          >
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../build/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.hero {
+  max-width: $content-width;
+  @extend %wrapper-color;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: auto;
+}
+
+.hero__wrapper {
+  height: 524px;
+  background-image: url(../../../img/bg/bg-ball.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0px;
+
+  @include media-mobile {
+    height: 574px;
+  }
+}
+
+.hero__container {
+  max-width: 430px;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.hero__description {
+  @extend %font-add;
+  color: $color-secondary;
+  margin-bottom: 12px;
+}
+
+.hero__button {
+  margin: 12px auto;
+}

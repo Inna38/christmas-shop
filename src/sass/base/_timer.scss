@@ -1,0 +1,42 @@
+.timer {
+  width: 344px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: $color-timer;
+  border-radius: 20px;
+  padding: 8px 12px 12px 12px;
+
+  @include media-laptop {
+    padding: 10px 12px 12px 12px;
+  }
+}
+
+.timer__item {
+  width: 80px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child)::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    background-color: $color-timer;
+
+    @include media-laptop {
+      right: -1px;
+    }
+  }
+}
+
+.timer__content {
+  @include font($size: 1.2rem);
+  text-transform: uppercase;
+  color: #fff;
+}

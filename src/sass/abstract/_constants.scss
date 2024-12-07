@@ -1,0 +1,28 @@
+$color-primary: #ff4646;
+$color-secondary: #ffffff;
+$color-additional: #181c29;
+$color-disabled: rgba(255, 255, 255, 0.4);
+
+$color-tag_work: #4361ff;
+$color-tag_health: #06a44f;
+$color-tag_harmony: #ff43f7;
+
+$color-overlay: rgba(24, 28, 41, 0.8);
+$color-timer: rgba(255, 255, 255, 0.4);
+$color-background-img: #ecf3f8;
+$color-background_hover: rgba(255, 70, 70, 0.1);
+
+$content-width: 1440px;
+
+$tablet-width: 1280px;
+$tablet-width-gifts-card: 969px;
+
+$mobile-width: 767px;
+$mobile-width-gifts-card: 635px;
+$small-mobile-width: 379px;
+
+$tablet-width-burger: 777px;
+
+$transition-background: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+$transition-color: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+$transition-fill: fill 5000s cubic-bezier(0.075, 0.82, 0.165, 1);

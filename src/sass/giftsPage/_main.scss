@@ -1,0 +1,50 @@
+.gifts__wrapper {
+  background-color: $color-primary;
+  background-image: url(../../../img/bg/bg-garland.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include media-tablet {
+    padding-bottom: 48px;
+  }
+}
+
+.main__container {
+  width: 475px;
+  text-align: center;
+  margin: 0 auto;
+
+  @include media-mobile {
+    width: 365px;
+  }
+
+  @include media-small-mobile-width {
+    width: 264px;
+  }
+}
+
+.main__list {
+  margin: 20px 0;
+}
+
+.gifts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -8px;
+  margin-bottom: -12px;
+}
+
+.gifts__item {
+  min-height: 342px;
+  flex-basis: calc((100% - 48px) / 4);
+  margin-right: 8px;
+  margin-bottom: 12px;
+
+  .best__list-title {
+    margin-top: 10px;
+  }
+}

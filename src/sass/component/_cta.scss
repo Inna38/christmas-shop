@@ -1,0 +1,50 @@
+.cta__wrapper {
+  max-width: $content-width;
+  @extend %wrapper-color;
+  border-radius: 0 0 20px 20px;
+  margin: auto;
+  padding-top: 13px;
+
+  @include media-tablet {
+    padding-top: 0;
+  }
+}
+
+.bg__wrapper {
+  height: 653px;
+  background-image: url(../../../img/bg/bg-forest.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 120px 0 180px 0;
+}
+
+.cta__container {
+  width: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 48px auto 180px auto;
+
+  @include media-tablet {
+    margin: 60px auto 180px auto;
+  }
+
+  @include media-mobile {
+    width: 364px;
+    margin: 40px auto 180px auto;
+  }
+}
+
+.cta__title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.cta__description {
+  @extend %font-add;
+  color: $color-secondary;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}

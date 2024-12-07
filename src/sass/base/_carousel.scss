@@ -1,0 +1,60 @@
+.carousel-container {
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 1440px;
+  display: flex;
+}
+
+.carousel-slides {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-right: 205px;
+}
+
+.carousel-title {
+  margin-right: 20px;
+}
+
+.carousel-img {
+  border-radius: 20px;
+}
+
+.carousel-btn {
+  width: 132px;
+  display: flex;
+  margin: 20px 82px 0 auto;
+
+  @include media-tablet {
+    margin: 20px 8px 0 auto;
+  }
+}
+
+.carousel-btn_left {
+  margin-right: 20px;
+}
+
+.carousel-icon {
+  fill: none;
+  stroke: $color-secondary;
+  cursor: pointer;
+
+  transition: $transition-fill;
+
+  &:hover {
+    fill: $color-secondary;
+    stroke: $color-primary;
+    transition: $transition-fill;
+  }
+
+  @include media-mobile {
+    &:hover {
+      fill: none;
+      stroke: $color-secondary;
+      cursor: inherit;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 20px;
+  cursor: pointer;
+
+  @include media-mobile {
+    cursor: inherit;
+  }
+}
+
+.logo_img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.logo_text {
+  @include font($size: 1.2rem, $height: 1.6rem);
+  text-transform: uppercase;
+}
+
+.logo__home {
+  pointer-events: none;
+}

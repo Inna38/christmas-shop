@@ -1,0 +1,32 @@
+@import "./abstract/constants";
+@import "./abstract/mixins";
+@import "./abstract/placeholders";
+
+// ---------BASE-------------------
+@import "./base/base";
+@import "./base/logo";
+@import "./base/navigation";
+@import "./base/button";
+@import "./base/carousel";
+@import "./base/best-card";
+@import "./base/tag";
+@import "./base/timer";
+@import "./base/social-list";
+@import "./base/burger";
+@import "./base/modal";
+
+// ---------LAYOUTS----------------
+@import "./layouts/wrapper";
+
+// --------COMPONENT---------------
+@import "./component/header";
+@import "./component/hero";
+@import "./component/about";
+@import "./component/slider";
+@import "./component/bestGifts";
+@import "./component/cta";
+@import "./component/footer";
+
+
+// --------Gifts PAGE---------------
+@import "./giftsPage/main";

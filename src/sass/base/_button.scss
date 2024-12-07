@@ -1,0 +1,26 @@
+.button {
+  width: 237px;
+  display: block;
+  @include font($size: 1.2rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-secondary;
+  background-color: $color-additional;
+  border-radius: 20px;
+  padding: 20px 32px;
+
+  transition: $transition-background, $transition-color;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-additional;
+  }
+
+  @include media-mobile {
+    &:hover {
+      background-color: $color-additional;
+      color: $color-secondary;
+      cursor: inherit;
+    }
+  }
+}
