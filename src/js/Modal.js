@@ -34,7 +34,6 @@ export const addModalClickHandler = () => {
 
   bestGifts.forEach(function (bestGift) {
     bestGift.addEventListener("click", function (e) {
-      console.log("yuytuytu", bestGift);
       buildModal(e.currentTarget.id);
     });
   });
