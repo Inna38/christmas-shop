@@ -6,16 +6,16 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
 
   modules: [Navigation],
-  speed: 1200,
+  speed: 1000,
   autoHeight: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  breakpoints: {
-    560: {
-      loop: true,
-    },
-  },
+  // breakpoints: {
+  //   560: {
+  //     loop: true,
+  //   },
+  // },
 });

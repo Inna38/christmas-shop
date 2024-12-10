@@ -12,11 +12,12 @@
   @include font($size: 1.2rem, $height: 1.6rem);
   text-transform: uppercase;
   margin-right: 8px;
-  padding: 12px 20px;
+  padding: 12px 10px;
   cursor: pointer;
 
   a {
     color: #181c29;
+    padding: 12px 10px;
   }
 
   &:last-child {
